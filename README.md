@@ -1,6 +1,10 @@
 # 1337 C Journey and 42 Pool Preparation
 
+<div align="center">
+
 [![sfaraji's 42 stats](https://badge.mediaplus.ma/kettlebells/sfaraji)](https://github.com/oakoudad/badge42)
+
+</div>
 
 This repository is my programming journey at **1337**. It contains the work
 done during the Piscine, the C days, shell days, Rush projects, BSQ, and the
@@ -18,9 +22,6 @@ The goal is not only to collect solutions. The goal is to understand the
 fundamentals needed for the 42/1337 Pool: C syntax, memory, strings, arrays,
 recursion, pointers, shell commands, problem solving, and writing small
 programs under strict constraints.
-
-**Repository topics:** `1337`, `42-school`, `42-piscine`, `c`, `c-programming`,
-`algorithm-practice`, `exam-preparation`, `shell`, `student-journey`
 
 ## 1337 Journey: `DAYS/`
 
