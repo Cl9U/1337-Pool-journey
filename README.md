@@ -101,3 +101,7 @@ workspace for repetition, debugging, and preparing for the next exam.
 This README is an index of the journey. The source files remain the real
 record of the work: read them, compile them, test edge cases, and rewrite the
 solutions until the ideas are clear.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
