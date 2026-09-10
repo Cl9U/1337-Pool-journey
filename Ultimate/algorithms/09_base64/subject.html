@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Base64 Encode / Decode</title>
+<style>
+  body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Courier New', monospace;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.55;
+  }
+  h1 {
+    color: #00ff9d;
+    border-bottom: 2px solid #00ff9d;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+  }
+  h2 {
+    color: #ff9d00;
+    margin-top: 2em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .meta {
+    display: flex;
+    gap: 24px;
+    background: #161616;
+    border: 1px solid #333;
+    padding: 12px 18px;
+    margin: 18px 0;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .meta span b { color: #00ff9d; }
+  code, pre {
+    background: #161616;
+    color: #ffd479;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  pre {
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-left: 3px solid #00ff9d;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .example {
+    background: #111;
+    border: 1px dashed #444;
+    padding: 10px 14px;
+    margin: 8px 0;
+  }
+  .stars { color: #ff5f5f; letter-spacing: 2px; }
+  footer {
+    margin-top: 3em;
+    color: #555;
+    font-size: 0.8em;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>Base64 Encode / Decode</h1>
+  <div class="meta">
+    <span>Category: <b>Compression</b></span>
+    <span>Difficulty: <b class="stars">★★★☆☆</b></span>
+    <span>File: <b>base64.c</b></span>
+  </div>
+
+  <h2>Description</h2>
+  <p>Encode arbitrary binary data 3 bytes at a time into 4 base64 characters using the standard alphabet (A-Z a-z 0-9 + /), padding with '=' when the input length isn't a multiple of 3. Implement the reverse to recover the original bytes.</p>
+
+  <h2>Function Prototypes</h2>
+  <pre>char *ft_base64_encode(unsigned char *data, int len);
+unsigned char *ft_base64_decode(char *b64, int *out_len);</pre>
+
+  <h2>Constraints</h2>
+  <ul>
+    <li>Use the standard RFC 4648 alphabet, not URL-safe variant.</li>
+    <li>Padding with '=' must be correctly applied for 1 or 2 leftover bytes.</li>
+    <li>Decoder must reject or skip whitespace/newlines gracefully (your choice, documented).</li>
+  </ul>
+
+  <h2>Examples</h2>
+  <div class="example"><b>Input:</b> Man<br><b>Output:</b> TWFu</div>
+  <div class="example"><b>Input:</b> Ma<br><b>Output:</b> TWE=</div>
+
+  <h2>Turn-in</h2>
+  <p>A single file named <code>base64.c</code> in this folder, Norminette-compliant, with no memory leaks (check with a leak checker on all malloc'd returns).</p>
+
+  <footer>1337 / 42-style exercise sheet &mdash; algo_exercises</footer>
+</body>
+</html>

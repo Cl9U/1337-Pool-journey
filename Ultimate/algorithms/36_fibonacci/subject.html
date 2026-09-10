@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fibonacci (Iterative & Memoized)</title>
+<style>
+  body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Courier New', monospace;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.55;
+  }
+  h1 {
+    color: #00ff9d;
+    border-bottom: 2px solid #00ff9d;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+  }
+  h2 {
+    color: #ff9d00;
+    margin-top: 2em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .meta {
+    display: flex;
+    gap: 24px;
+    background: #161616;
+    border: 1px solid #333;
+    padding: 12px 18px;
+    margin: 18px 0;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .meta span b { color: #00ff9d; }
+  code, pre {
+    background: #161616;
+    color: #ffd479;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  pre {
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-left: 3px solid #00ff9d;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .example {
+    background: #111;
+    border: 1px dashed #444;
+    padding: 10px 14px;
+    margin: 8px 0;
+  }
+  .stars { color: #ff5f5f; letter-spacing: 2px; }
+  footer {
+    margin-top: 3em;
+    color: #555;
+    font-size: 0.8em;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>Fibonacci (Iterative & Memoized)</h1>
+  <div class="meta">
+    <span>Category: <b>Integer</b></span>
+    <span>Difficulty: <b class="stars">★☆☆☆☆</b></span>
+    <span>File: <b>fibonacci.c</b></span>
+  </div>
+
+  <h2>Description</h2>
+  <p>Implement Fibonacci two ways: a purely iterative O(n) version with O(1) space, and a memoized version that stores previously computed results in a cache array to avoid recomputation.</p>
+
+  <h2>Function Prototypes</h2>
+  <pre>long ft_fibonacci_iter(int n);
+long ft_fibonacci_memo(int n, long *cache);</pre>
+
+  <h2>Constraints</h2>
+  <ul>
+    <li>n < 0 is invalid input; define and document a clear error behavior.</li>
+    <li>The iterative version must not use recursion at all.</li>
+    <li>The cache array passed to ft_fibonacci_memo must be pre-sized by the caller; document the expected size convention.</li>
+  </ul>
+
+  <h2>Examples</h2>
+  <div class="example"><b>Input:</b> ft_fibonacci_iter(10)<br><b>Output:</b> 55</div>
+
+  <h2>Turn-in</h2>
+  <p>A single file named <code>fibonacci.c</code> in this folder, Norminette-compliant, with no memory leaks (check with a leak checker on all malloc'd returns).</p>
+
+  <footer>1337 / 42-style exercise sheet &mdash; algo_exercises</footer>
+</body>
+</html>

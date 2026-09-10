@@ -1,0 +1,52 @@
+WORD AND PARAMETER MOVEMENTS SUMMARY
+------------------------------------
+
+last_word         -> find one word from the end
+print_params      -> move forward through argv
+clean_spaces      -> normalize separators
+last_param        -> locate the final argument
+reverse_each_word -> reverse characters inside each word
+rev_params        -> move backward through argv
+rev_wstr          -> move backward through words
+rev_params_words  -> combine both backward traversals
+
+
+==================================================
+GLOBAL TRAINING ORDER
+==================================================
+
+1. find_char
+2. hidden_string
+3. inter
+4. union
+5. contains_substring
+6. first_word
+7. rev_print
+8. is_palindrome
+
+9. unique_runs
+10. count_runs
+11. collapse_runs
+12. rle
+13. repeated_runs
+14. longest_run
+15. rle_decode
+16. same_run_pattern
+
+17. alpha_position
+18. shift_lowercase
+19. shift_letter
+20. caesar
+21. repeat_key
+22. key_positions
+23. keyed_shift
+24. vigenere
+
+25. last_word
+26. print_params
+27. clean_spaces
+28. last_param
+29. reverse_each_word
+30. rev_params
+31. rev_wstr
+32. rev_params_words

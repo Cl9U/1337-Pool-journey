@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reverse an Integer</title>
+<style>
+  body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Courier New', monospace;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.55;
+  }
+  h1 {
+    color: #00ff9d;
+    border-bottom: 2px solid #00ff9d;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+  }
+  h2 {
+    color: #ff9d00;
+    margin-top: 2em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .meta {
+    display: flex;
+    gap: 24px;
+    background: #161616;
+    border: 1px solid #333;
+    padding: 12px 18px;
+    margin: 18px 0;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .meta span b { color: #00ff9d; }
+  code, pre {
+    background: #161616;
+    color: #ffd479;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  pre {
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-left: 3px solid #00ff9d;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .example {
+    background: #111;
+    border: 1px dashed #444;
+    padding: 10px 14px;
+    margin: 8px 0;
+  }
+  .stars { color: #ff5f5f; letter-spacing: 2px; }
+  footer {
+    margin-top: 3em;
+    color: #555;
+    font-size: 0.8em;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>Reverse an Integer</h1>
+  <div class="meta">
+    <span>Category: <b>Integer</b></span>
+    <span>Difficulty: <b class="stars">★☆☆☆☆</b></span>
+    <span>File: <b>reverse_int.c</b></span>
+  </div>
+
+  <h2>Description</h2>
+  <p>Reverse the digits of an integer (e.g. 1234 -> 4321), preserving the sign.</p>
+
+  <h2>Function Prototype</h2>
+  <pre>int ft_reverse_int(int nbr);</pre>
+
+  <h2>Constraints</h2>
+  <ul>
+    <li>Must detect and handle potential overflow when the reversed value would exceed INT_MAX/INT_MIN; define a clear error return.</li>
+    <li>Negative numbers reverse their digits and keep the negative sign (e.g. -120 -> -21).</li>
+    <li>Trailing zeros in the input must not produce leading zeros in the output (120 -> 21, not 021).</li>
+  </ul>
+
+  <h2>Examples</h2>
+  <div class="example"><b>Input:</b> 1234<br><b>Output:</b> 4321</div>
+  <div class="example"><b>Input:</b> -120<br><b>Output:</b> -21</div>
+
+  <h2>Turn-in</h2>
+  <p>A single file named <code>reverse_int.c</code> in this folder, Norminette-compliant, with no memory leaks (check with a leak checker on all malloc'd returns).</p>
+
+  <footer>1337 / 42-style exercise sheet &mdash; algo_exercises</footer>
+</body>
+</html>

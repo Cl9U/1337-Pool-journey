@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>atoi / itoa Reimplementation</title>
+<style>
+  body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    font-family: 'Courier New', monospace;
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.55;
+  }
+  h1 {
+    color: #00ff9d;
+    border-bottom: 2px solid #00ff9d;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+  }
+  h2 {
+    color: #ff9d00;
+    margin-top: 2em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .meta {
+    display: flex;
+    gap: 24px;
+    background: #161616;
+    border: 1px solid #333;
+    padding: 12px 18px;
+    margin: 18px 0;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .meta span b { color: #00ff9d; }
+  code, pre {
+    background: #161616;
+    color: #ffd479;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  pre {
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-left: 3px solid #00ff9d;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .example {
+    background: #111;
+    border: 1px dashed #444;
+    padding: 10px 14px;
+    margin: 8px 0;
+  }
+  .stars { color: #ff5f5f; letter-spacing: 2px; }
+  footer {
+    margin-top: 3em;
+    color: #555;
+    font-size: 0.8em;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>atoi / itoa Reimplementation</h1>
+  <div class="meta">
+    <span>Category: <b>Integer</b></span>
+    <span>Difficulty: <b class="stars">★★☆☆☆</b></span>
+    <span>File: <b>atoi_itoa.c</b></span>
+  </div>
+
+  <h2>Description</h2>
+  <p>Reimplement the standard atoi (skip leading whitespace, handle an optional sign, parse digits until a non-digit) and itoa (convert an int, including INT_MIN, into a malloc'd string).</p>
+
+  <h2>Function Prototypes</h2>
+  <pre>int ft_atoi(char *str);
+char *ft_itoa(int nbr);</pre>
+
+  <h2>Constraints</h2>
+  <ul>
+    <li>ft_itoa must correctly handle INT_MIN, which cannot be negated into a positive int directly.</li>
+    <li>ft_atoi must stop parsing at the first non-digit character rather than erroring out.</li>
+    <li>Neither function may call the real atoi/itoa from libc.</li>
+  </ul>
+
+  <h2>Examples</h2>
+  <div class="example"><b>Input:</b> "   -42abc" atoi<br><b>Output:</b> -42</div>
+  <div class="example"><b>Input:</b> itoa(-2147483648)<br><b>Output:</b> "-2147483648"</div>
+
+  <h2>Turn-in</h2>
+  <p>A single file named <code>atoi_itoa.c</code> in this folder, Norminette-compliant, with no memory leaks (check with a leak checker on all malloc'd returns).</p>
+
+  <footer>1337 / 42-style exercise sheet &mdash; algo_exercises</footer>
+</body>
+</html>
