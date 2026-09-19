@@ -25,8 +25,7 @@ programs under strict constraints.
 
 ## 1337 Journey: `DAYS/`
 
-The `DAYS` folder contains 15 collections and 127 files, excluding Git
-metadata. The exercise numbers follow the original 1337 organization.
+The `DAYS` folder contains 15 collections and 127 file. The exercise numbers follow the original 1337 organization.
 
 | Folder | Focus |
 | --- | --- |
